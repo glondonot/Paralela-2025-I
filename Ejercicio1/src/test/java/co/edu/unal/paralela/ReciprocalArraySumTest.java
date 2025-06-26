@@ -114,9 +114,6 @@ public class ReciprocalArraySumTest extends TestCase {
         assertTrue(errMsg, speedup >= minimalExpectedSpeedup);
     }
 
-    /**
-     * Prueba que la implementación de dos tareas en paralelo calcula correctamente los resultados para arreglos con cientos de millones de elementos..
-     */
     public void testParSimpleTwoHundredMillion() {
         final double speedup = parTestHelper(200_000_000, false, 2);
         final double minimalExpectedSpeedup = 1.5;
@@ -125,9 +122,6 @@ public class ReciprocalArraySumTest extends TestCase {
         assertTrue(errMsg, speedup >= minimalExpectedSpeedup);
     }
 
-    /**
-     * Prueba que la implementación de muchas tareas en paralelo calcula correctamente los resultados para arreglos con un millónde elementos.
-     */
     public void testParManyTaskTwoMillion() {
         final int ncores = getNCores();
         final double minimalExpectedSpeedup = (double)ncores * 0.6;
@@ -137,9 +131,6 @@ public class ReciprocalArraySumTest extends TestCase {
         assertTrue(errMsg, speedup >= minimalExpectedSpeedup);
     }
 
-    /**
-     * Prueba que la implementación de muchas tareas en paralelo calcula correctamente los resultados para arreglos con cientos de millones de elementos.
-     */
     public void testParManyTaskTwoHundredMillion() {
         final int ncores = getNCores();
         final double speedup = parTestHelper(200_000_000, true, ncores);

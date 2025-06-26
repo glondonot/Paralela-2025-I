@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: co.edu.unal.paralela.ReciprocalArraySumTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.78 s <<< FAILURE! -- in co.edu.unal.paralela.ReciprocalArraySumTest
-co.edu.unal.paralela.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion -- Time elapsed: 15.06 s <<< FAILURE!
-junit.framework.AssertionFailedError: Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  9.600000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 3.264151x veces
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 55.56 s <<< FAILURE! -- in co.edu.unal.paralela.ReciprocalArraySumTest
+co.edu.unal.paralela.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion -- Time elapsed: 24.12 s <<< FAILURE!
+junit.framework.AssertionFailedError: Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  9.600000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 6.638298x veces
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at co.edu.unal.paralela.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:149)
+	at co.edu.unal.paralela.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:140)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at junit.framework.TestCase.runTest(TestCase.java:154)
