@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="co.edu.unal.paralela.ReciprocalArraySumTest" time="55.565" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="co.edu.unal.paralela.ReciprocalArraySumTest" time="57.151" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-24-openjdk/lib"/>
-    <property name="sun.java.command" value="/home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/Ejercicio1/target/surefire/surefirebooter-20250626165556283_3.jar /home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/Ejercicio1/target/surefire 2025-06-26T16-55-56_182-jvmRun1 surefire-20250626165556283_1tmp surefire_0-20250626165556283_2tmp"/>
+    <property name="sun.java.command" value="/home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/Ejercicio1/target/surefire/surefirebooter-20250626190654329_3.jar /home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/Ejercicio1/target/surefire 2025-06-26T19-06-54_182-jvmRun1 surefire-20250626190654329_1tmp surefire_0-20250626190654329_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/Ejercicio1/target/test-classes:/home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/Ejercicio1/target/classes:/home/srestrepo/.m2/repository/edu/rice/pcdp/pcdp-core/0.0.4-SNAPSHOT/pcdp-core-0.0.4-SNAPSHOT.jar:/home/srestrepo/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/Ejercicio1/target/surefire/surefirebooter-20250626165556283_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/Ejercicio1/target/surefire/surefirebooter-20250626190654329_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.1"/>
     <property name="user.name" value="srestrepo"/>
@@ -53,11 +53,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testParSimpleTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="30.82"/>
-  <testcase name="testParSimpleTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.315"/>
-  <testcase name="testParManyTaskTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.264"/>
-  <testcase name="testParManyTaskTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="24.119">
-    <failure message="Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  9.600000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 6.638298x veces" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  9.600000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 6.638298x veces
+  <testcase name="testParSimpleTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="31.578"/>
+  <testcase name="testParSimpleTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.326"/>
+  <testcase name="testParManyTaskTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.269"/>
+  <testcase name="testParManyTaskTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="24.908">
+    <failure message="Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  9.600000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 5.870370x veces" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  9.600000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 5.870370x veces
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.assertTrue(Assert.java:20)
 	at co.edu.unal.paralela.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:140)

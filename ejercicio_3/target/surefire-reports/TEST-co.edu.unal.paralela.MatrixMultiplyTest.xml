@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.edu.unal.paralela.StudentAnalyticsTest" time="3.512" tests="6" errors="0" skipped="0" failures="0">
+<testsuite name="co.edu.unal.paralela.MatrixMultiplyTest" time="48.648" tests="2" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="24.0.1"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-24-openjdk/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/ejercicio_2"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/ejercicio_3"/>
     <property name="java.vm.vendor" value="Arch Linux"/>
     <property name="java.vendor.url" value="https://openjdk.org/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/ejercicio_2"/>
+    <property name="user.dir" value="/home/srestrepo/Documentos/Universidad Nacional/Noveno Semestre/Computacion Paralela/Ejercicios/ejercicio_3"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="24.0.1"/>
     <property name="os.arch" value="amd64"/>
@@ -25,7 +25,7 @@
     <property name="classworlds.conf" value="/usr/share/java/maven/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="stdout.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/tmp/.mount_CursorhuJZ01/usr/lib/:/tmp/.mount_CursorhuJZ01/usr/lib32/:/tmp/.mount_CursorhuJZ01/usr/lib64/:/tmp/.mount_CursorhuJZ01/lib/:/tmp/.mount_CursorhuJZ01/lib/i386-linux-gnu/:/tmp/.mount_CursorhuJZ01/lib/x86_64-linux-gnu/:/tmp/.mount_CursorhuJZ01/lib/aarch64-linux-gnu/:/tmp/.mount_CursorhuJZ01/lib32/:/tmp/.mount_CursorhuJZ01/lib64/::/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.library.path" value="/tmp/.mount_CursorfXEwMO/usr/lib/:/tmp/.mount_CursorfXEwMO/usr/lib32/:/tmp/.mount_CursorfXEwMO/usr/lib64/:/tmp/.mount_CursorfXEwMO/lib/:/tmp/.mount_CursorfXEwMO/lib/i386-linux-gnu/:/tmp/.mount_CursorfXEwMO/lib/x86_64-linux-gnu/:/tmp/.mount_CursorfXEwMO/lib/aarch64-linux-gnu/:/tmp/.mount_CursorfXEwMO/lib32/:/tmp/.mount_CursorfXEwMO/lib64/::/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="maven.conf" value="/usr/share/java/maven/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="68.0"/>
@@ -56,10 +56,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase name="testAverageAgeOfEnrolledStudents" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.442"/>
-  <testcase name="testAverageAgeOfEnrolledStudentsPerf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.761"/>
-  <testcase name="testMostCommonFirstNameOfInactiveStudents" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.454"/>
-  <testcase name="testMostCommonFirstNameOfInactiveStudentsPerf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="1.243"/>
-  <testcase name="testCountNumberOfFailedStudentsOlderThan20" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.205"/>
-  <testcase name="testCountNumberOfFailedStudentsOlderThan20Perf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.407"/>
+  <testcase name="testPar512_x_512" classname="co.edu.unal.paralela.MatrixMultiplyTest" time="9.178">
+    <failure message="It was expected that the parallel implementation would run at least 7.200000x faster, but it only achieved 6.000000x speedup" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: It was expected that the parallel implementation would run at least 7.200000x faster, but it only achieved 6.000000x speedup
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at co.edu.unal.paralela.MatrixMultiplyTest.testPar512_x_512(MatrixMultiplyTest.java:116)
+</failure>
+  </testcase>
+  <testcase name="testPar768_x_768" classname="co.edu.unal.paralela.MatrixMultiplyTest" time="39.47">
+    <failure message="It was expected that the parallel implementation would run at least 7.200000x faster, but it only achieved 6.329412x speedup" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: It was expected that the parallel implementation would run at least 7.200000x faster, but it only achieved 6.329412x speedup
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at co.edu.unal.paralela.MatrixMultiplyTest.testPar768_x_768(MatrixMultiplyTest.java:128)
+</failure>
+  </testcase>
 </testsuite>
